@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.appbar {
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    .top-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mid-wrapper{
+        display: flex;
+        background-color: #f7f6f6;;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+    .bottom-wrapper{
+        display: flex;
+        align-items: stretch;
+        background-color: #0044cc;
+        height: 45px;
+        justify-content: center; 
+    }
+}
+
+.top-bar {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    max-width: 1600px;
+    width: 1600px;
+    .fa{
+        font-size: 15px;      
+        color: #98999e;
+        margin-right: 3px;
+    }
+    a {
+        text-decoration: none;
+        margin-right: 15px;
+        color: #98999e;
+    }
+    #lang-flag{
+        width: 15px;
+        height: 10px;
+    }
+}
+
+.mid-bar {
+    display: flex;
+    align-items: center;
+    max-width: 1600px;
+    width: 1800px;
+    padding: 0px 20px;
+    .logo {
+        font-size: 40px;
+        font-weight: bolder;
+        margin-right: 50px;
+
+    }
+    .search-bar {
+        display: flex;
+        height: 40px;
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 1px solid #dee7f6;
+        span { 
+            display: inline-flex;
+            width: 55px;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: #0c51d7;
+            .fa{
+                margin-left: 7px;
+                color: white;
+            }
+        }
+        input {
+            flex-grow: 1;
+            width: auto;
+            border: none;
+            padding: 10px;
+            outline: none;
+        }
+        button {
+            border: none;
+            background-color: #0c51d7;
+            width: 45px;
+            cursor: pointer;
+            .fa{
+                font-size: 19px;
+                color: white;
+            }
+        }
+    }
+    .nav-icons{
+        display: flex;
+        font-size: 12px;
+        padding: 0px 40px;
+        a {
+            text-decoration: none;
+            color: #98999e;
+            margin-left: 15px;
+        }
+        .fa{
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .cart-info{
+        display: flex;
+
+        .text {
+            display: flex;
+            width: 120px;
+            align-items: center;
+            color: #98999e;
+        }
+        button{
+            height: 45px;
+            width: 45px;
+            background-color: #0044cc;
+            border: none;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        .fa{
+            color: white;
+            font-size: 25px;
+        }
+    }
+}
+
+.bottom-bar {
+    display: flex;
+    padding: 0% 20px;
+    max-width: 1600px;
+    width: 1600px;
+    align-items: center;
+    gap: 30px;
+    background: #0044cc;
+    color: white;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    .float{
+        position: relative;
+    }
+    .all-departments {
+        align-self: stretch;
+        background: #ffcc00;
+        padding-left: 20px;
+        padding-right: 70px;
+        font-weight: bold;
+        align-content: center;
+        color: black;
+        .fa{
+            margin-right: 5px;
+        }
+        .notify{
+            position: absolute;
+            top: -7px;
+            right: 5px;
+            padding: 2px 5px;
+            font-size: 13px;
+            font-weight: lighter;
+            background-color: rgb(232, 112, 0);
+            color: white;
+        }
+    }
+    .new-notify{
+        position: absolute;
+        top: -20px;
+        right: -5px;
+        padding: 0px 7px;
+        font-size: 13px;
+        font-weight: 100;
+        background-color: #ffcc00;
+        color: black;
+    }
+
+    
+    .contact {
+        margin-left: auto;
+    }
+    .blog{
+        align-self: stretch;
+        background: #ffcc00;
+        align-content: center;
+        padding: 0px 15px;
+        font-weight: bold;
+        margin-right: 0px;
+    }
+    
+}
