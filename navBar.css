@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.appbar {
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fa{
+    font-size: 15px;      
+    color: #98999e;
+    margin-right: 3px;
+}
+.fa-caret-down{
+    margin: 0px;
+}
+
+
+.top-bar {
+    margin: 0px 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+#lang-flag{
+    width: 15px;
+    height: 10px;
+}
+
+.top-bar a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #98999e;
+}
+
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: white;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.search-bar {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px;
+    outline: none;
+}
+
+.search-bar button {
+    border: none;
+    background: #ffcc00;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.nav-icons a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 15px;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #0044cc;
+    color: white;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.all-departments {
+    background: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.contact {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.blog {
+    background: yellow;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
