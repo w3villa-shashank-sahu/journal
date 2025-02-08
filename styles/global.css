@@ -3,3 +3,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: transparent;
 }
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacer{
+    padding: 20px;
+}
