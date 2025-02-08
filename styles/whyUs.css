@@ -117,7 +117,7 @@
 
 .carousel {
     max-width: 1600px;
-    width: 100%;
+
     margin-top: 30px;
 
     .carousel-item {
@@ -126,7 +126,7 @@
         margin: 10px;
 
         img {
-            width: 100%;
+            /* width: 100%; */
             height: 400px;
             object-fit: cover;
             border-radius: 10px;
@@ -152,7 +152,7 @@
     border-radius: 10px;
     margin-right: 10px;
 
-    .card {
+    /* .card {
         border: 1px solid #ddd;
         overflow: hidden;
         background: white;
@@ -233,9 +233,8 @@
             display: flex;
             flex-direction: column;
             gap: 7px;
-
-            .title {
-                font-weight: bold;
+            .title{
+                font-weight: 500;
                 font-size: 20px;
             }
 
@@ -256,10 +255,8 @@
 
         .container {
             display: flex;
-            align-items: center;
-            /* Vertically align items */
-            gap: 10px;
-            /* Add some space between elements */
+            align-items: center; 
+            gap: 10px; 
             padding: 0px 10px;
             justify-content: space-between;
 
@@ -270,42 +267,33 @@
                 .quantity {
                     display: flex;
                     align-items: center;
-                    border: 1px solid #ccc;
-
-                    /* Add a border to the quantity box */
+                    border: 1px solid #ccc; 
                     input {
-                        width: 30px;
-                        /* Adjust width as needed */
+                        width: 30px; 
                         text-align: center;
                         border: none;
-                        outline: none;
-                        /* Remove default outline on focus */
+                        outline: none; 
                     }
 
                     .quantity-buttons {
                         display: flex;
                         flex-direction: column;
-
-                        /* Arrange buttons vertically */
                         button {
                             border: none;
                             background: rgb(225, 225, 225);
                             padding: 2px 5px;
                             cursor: pointer;
-                            font-size: 12px;
-                            /* Adjust font size as needed */
+                            font-size: 12px; 
                         }
                     }
                 }
 
                 .add-to-cart {
-                    background-color: #004691;
-                    /* Example blue color */
+                    background-color: #004691; 
                     color: white;
                     align-self: stretch;
                     border: none;
-                    border-radius: 3px;
-                    /* Add rounded corners */
+                    border-radius: 3px; 
                     cursor: pointer;
                 }
             }
@@ -318,10 +306,8 @@
                     background: none;
                     border: none;
                     cursor: pointer;
-                    font-size: 20px;
-                    /* Adjust size as needed */
-                    color: #888;
-                    /* Example gray color */
+                    font-size: 20px; 
+                    color: #888; 
                 }
             }
         }
@@ -348,10 +334,210 @@
                     color: red;
                     font-size: 15px
                 }
+            };
+        }    
+    } */
+}
+
+.card {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    background: white;
+    position: relative;
+
+    img {
+        object-fit: cover;
+        height: 300px;
+        position: relative;
+    }
+
+    .ribbons {
+        position: absolute;
+        top: 10px;
+        left: -60px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transform: rotate(-45deg);
+
+        .ribbon {
+            display: flex;
+            color: white;
+            width: 190px;
+            padding: 3px 0px;
+            justify-content: center;
+        }
+
+        .red-ribbon {
+            background-color: red;
+        }
+
+        .green-ribbon {
+            background-color: green;
+        }
+    }
+
+    .right-tags {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        align-items: end;
+        gap: 5px;
+
+        .chip {
+            width: fit-content;
+            padding: 3px 10px;
+            color: white;
+            font-size: 15px;
+        }
+
+        .discount {
+            background-color: red;
+        }
+
+        .hot {
+            background-color: yellow;
+            color: black;
+        }
+    }
+
+    .details1 {
+        background-color: #f0f0ff;
+        display: flex;
+        padding: 13px 10px;
+        justify-content: space-between;
+        color: grey;
+
+        a {
+            color: gray;
+        }
+    }
+
+    .details2 {
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        .title {
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .price {
+            color: gray;
+        }
+
+        .sp {
+            font-size: 20px;
+        }
+
+        .mrp {
+            color: gray;
+            text-decoration: line-through;
+
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        /* Vertically align items */
+        gap: 10px;
+        /* Add some space between elements */
+        padding: 0px 10px;
+        justify-content: space-between;
+
+        .group1 {
+            display: flex;
+            gap: 5px;
+
+            .quantity {
+                display: flex;
+                align-items: center;
+                border: 1px solid #ccc;
+
+                /* Add a border to the quantity box */
+                input {
+                    width: 30px;
+                    /* Adjust width as needed */
+                    text-align: center;
+                    border: none;
+                    outline: none;
+                    /* Remove default outline on focus */
+                }
+
+                .quantity-buttons {
+                    display: flex;
+                    flex-direction: column;
+
+                    /* Arrange buttons vertically */
+                    button {
+                        border: none;
+                        background: rgb(225, 225, 225);
+                        padding: 2px 5px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        /* Adjust font size as needed */
+                    }
+                }
             }
 
-            ;
+            .add-to-cart {
+                background-color: #004691;
+                /* Example blue color */
+                color: white;
+                align-self: stretch;
+                border: none;
+                border-radius: 3px;
+                /* Add rounded corners */
+                cursor: pointer;
+            }
         }
+
+        .wishlist-compare {
+            display: flex;
+            gap: 10px;
+
+            button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-size: 20px;
+                /* Adjust size as needed */
+                color: #888;
+                /* Example gray color */
+            }
+        }
+    }
+
+    .footer-actions {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        background-color: #f0f0ff;
+        margin-top: 15px;
+        color: gray;
+        padding: 10px;
+
+        span {
+            font-size: 14px;
+            font-weight: 500;
+
+            .fa-bitcoin {
+                color: green;
+                font-size: 15px
+            }
+
+            .fa-circle-question {
+                color: red;
+                font-size: 15px
+            }
+        }
+
+        ;
     }
 }
 
@@ -368,5 +554,63 @@
 .feature-category {
     max-width: 1600px;
     width: 100%;
+    padding: 30px 0px;
+
+    .outer-container {
+        display: flex;
+        background-color: #d7dadf;
+        align-content: stretch;
+        width: 100%;
+        height: fit-content;
+
+        .fixed {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+
+            span {
+                font-size: 17px;
+            }
+
+            img {
+                object-fit: cover;
+                height: 200px;
+                aspect-ratio: 1;
+                padding: 10px 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #686873;
+                margin: 5px 0px;
+            }
+
+            .line-style {
+                color: #004691;
+                font-weight: bold;
+                text-decoration: underline;
+
+            }
+        }
+
+        .carousel-container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            /* width: 100%; */
+            background-color: white;
+        }
+
+        .card>.container {
+            padding-bottom: 10px;
+
+            .group1 button {
+                padding: 10px;
+
+            }
+
+        }
+    }
 
 }
