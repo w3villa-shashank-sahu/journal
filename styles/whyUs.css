@@ -1,5 +1,5 @@
 .why-us-section {
-    width: 1600px;
+    width: 100%;
     max-width: 1600px;
     padding: 30px;
     display: flex;
@@ -117,7 +117,7 @@
 
 .carousel {
     max-width: 1600px;
-    width: 1600px;
+    width: 100%;
     margin-top: 30px;
 
     .carousel-item {
@@ -147,7 +147,7 @@
 }
 
 /* Featured Products */
-.carousel-FeaturedItem{
+.carousel-FeaturedItem {
     /* border: 1px solid #8c9096; */
     border-radius: 10px;
     margin-right: 10px;
@@ -157,12 +157,14 @@
         overflow: hidden;
         background: white;
         position: relative;
-        img{
+
+        img {
             object-fit: cover;
             height: 300px;
             position: relative;
         }
-        .ribbons{
+
+        .ribbons {
             position: absolute;
             top: 10px;
             left: -60px;
@@ -170,21 +172,25 @@
             flex-direction: column;
             gap: 10px;
             transform: rotate(-45deg);
-            .ribbon{
+
+            .ribbon {
                 display: flex;
                 color: white;
                 width: 190px;
                 padding: 3px 0px;
                 justify-content: center;
             }
-            .red-ribbon{
+
+            .red-ribbon {
                 background-color: red;
             }
-            .green-ribbon{
+
+            .green-ribbon {
                 background-color: green;
             }
         }
-        .right-tags{
+
+        .right-tags {
             display: flex;
             flex-direction: column;
             position: absolute;
@@ -192,103 +198,134 @@
             right: 5px;
             align-items: end;
             gap: 5px;
-            .chip{
+
+            .chip {
                 width: fit-content;
-                padding: 3px 10px; 
+                padding: 3px 10px;
                 color: white;
                 font-size: 15px;
             }
-            .discount{
+
+            .discount {
                 background-color: red;
             }
-            .hot{
+
+            .hot {
                 background-color: yellow;
                 color: black;
             }
         }
-        .details1{
+
+        .details1 {
             background-color: #f0f0ff;
             display: flex;
             padding: 13px 10px;
             justify-content: space-between;
             color: grey;
-            a{
+
+            a {
                 color: gray;
             }
         }
-        .details2{
+
+        .details2 {
             padding: 15px 10px;
             display: flex;
             flex-direction: column;
             gap: 7px;
-            .title{
+
+            .title {
                 font-weight: bold;
                 font-size: 20px;
             }
-            .price{
+
+            .price {
                 color: gray;
             }
-            .sp{
+
+            .sp {
                 font-size: 20px;
             }
-            .mrp{
+
+            .mrp {
                 color: gray;
                 text-decoration: line-through;
-                
+
             }
-        }  
+        }
+
         .container {
             display: flex;
-            align-items: center; /* Vertically align items */
-            gap: 10px; /* Add some space between elements */
+            align-items: center;
+            /* Vertically align items */
+            gap: 10px;
+            /* Add some space between elements */
             padding: 0px 10px;
             justify-content: space-between;
-            .group1{
+
+            .group1 {
                 display: flex;
                 gap: 5px;
+
                 .quantity {
                     display: flex;
                     align-items: center;
-                    border: 1px solid #ccc; /* Add a border to the quantity box */
+                    border: 1px solid #ccc;
+
+                    /* Add a border to the quantity box */
                     input {
-                        width: 30px; /* Adjust width as needed */
+                        width: 30px;
+                        /* Adjust width as needed */
                         text-align: center;
                         border: none;
-                        outline: none; /* Remove default outline on focus */
+                        outline: none;
+                        /* Remove default outline on focus */
                     }
+
                     .quantity-buttons {
                         display: flex;
-                        flex-direction: column; /* Arrange buttons vertically */
+                        flex-direction: column;
+
+                        /* Arrange buttons vertically */
                         button {
                             border: none;
                             background: rgb(225, 225, 225);
                             padding: 2px 5px;
                             cursor: pointer;
-                            font-size: 12px; /* Adjust font size as needed */
+                            font-size: 12px;
+                            /* Adjust font size as needed */
                         }
-                    }                    
+                    }
                 }
+
                 .add-to-cart {
-                    background-color: #004691; /* Example blue color */
+                    background-color: #004691;
+                    /* Example blue color */
                     color: white;
                     align-self: stretch;
                     border: none;
-                    border-radius: 3px; /* Add rounded corners */
+                    border-radius: 3px;
+                    /* Add rounded corners */
                     cursor: pointer;
                 }
             }
+
             .wishlist-compare {
                 display: flex;
                 gap: 10px;
+
                 button {
                     background: none;
                     border: none;
                     cursor: pointer;
-                    font-size: 20px; /* Adjust size as needed */
-                    color: #888; /* Example gray color */
+                    font-size: 20px;
+                    /* Adjust size as needed */
+                    color: #888;
+                    /* Example gray color */
                 }
             }
         }
+
         .footer-actions {
             display: flex;
             justify-content: space-between;
@@ -297,23 +334,28 @@
             margin-top: 15px;
             color: gray;
             padding: 10px;
-            span{
+
+            span {
                 font-size: 14px;
                 font-weight: 500;
-                .fa-bitcoin{
+
+                .fa-bitcoin {
                     color: green;
                     font-size: 15px
                 }
-                .fa-circle-question{
+
+                .fa-circle-question {
                     color: red;
                     font-size: 15px
                 }
-            };
-        }    
+            }
+
+            ;
+        }
     }
 }
 
-.see-all-button{
+.see-all-button {
     padding: 10px;
     margin-top: 10px;
     background-color: #006ce0;
@@ -323,8 +365,8 @@
 }
 
 /* Featured Category */
-.feature-category{
+.feature-category {
     max-width: 1600px;
-    width: 1600px;
-    
+    width: 100%;
+
 }

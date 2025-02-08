@@ -1,4 +1,4 @@
-.wrapper-cardSection{
+.wrapper-cardSection {
     width: 100%;
     background-color: white;
     display: flex;
@@ -6,15 +6,15 @@
     justify-content: center;
 }
 
-.wrapper-cardSection > .row{
+.wrapper-cardSection>.row {
     display: flex;
     max-width: 1600px;
-    width: 1600px;
+    width: 100%;
     padding: 20px;
     gap: 20px;
     align-content: space-between;
 
-    .rolling-card{
+    .rolling-card {
         display: flex;
         flex-grow: 1;
         height: 420px;
@@ -22,74 +22,83 @@
         background-color: #e1e7ec;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
         justify-content: space-between;
-        
-        .column{
+
+        .column {
             margin-left: 20px;
             justify-content: center;
-            .tag{
+
+            .tag {
                 color: white;
                 padding: 10px;
                 border-radius: 3px;
                 width: fit-content;
                 background-color: blue;
             }
-            .title{
+
+            .title {
                 color: #323233;
                 font-size: 60px;
                 font-weight: bolder;
             }
 
-            button{
+            button {
                 width: fit-content;
 
                 padding: 15px 20px;
             }
         }
-        img{
+
+        img {
             display: flex;
             border-end-end-radius: 10px;
             border-top-right-radius: 10px;
             object-fit: contain;
-            
+
         }
     }
-    .column{
+
+    .column {
         display: flex;
         flex-direction: column;
         gap: 20px;
         margin-right: 10px;
 
-        .static-card{
+        .static-card {
             height: 200px;
             width: 400px;
             border-radius: 10px;
             background-color: #f3f2f3;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
             display: flex;
-            .column{
+
+            .column {
                 margin-left: 20px;
                 justify-content: center;
-                .category{
+
+                .category {
                     color: blue;
                 }
-                .title{
+
+                .title {
                     font-weight: 600;
                     color: #323233;
                     font-size: 20px;
                 }
             }
-        
-            
-            img{
+
+
+            img {
                 border-end-end-radius: 10px;
                 border-top-right-radius: 10px;
                 object-fit: contain;
                 width: auto;
                 height: 100%;
-            };
+            }
 
-         
+            ;
+
+
         }
     }
-    
+
 }
