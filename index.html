@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Bar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/navBar.css">
     <link rel="stylesheet" href="styles/heroSection.css">
+    <link rel="stylesheet" href="styles/whyUs.css">
 </head>
 <body>
     <header class="appbar">
@@ -125,18 +126,143 @@
     <div class="wrapper-cardSection">
         <div class="row">
             <div class="rolling-card">
-                images
+                <div class="column">
+                    <span class="tag">MOBILE</span>
+                    <span class="title">Best mobile options <br> at any resolution</span>
+                    <button>
+                        LEARN MORE
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <img src="images/phone.webp" alt="phone">
             </div>
             <div class="column">
                 <div class="static-card">
-                    images
+                    <div class="column">
+                        <div class="category">
+                            WEARABLES
+                        </div>
+                        <div class="title">
+                            Intelligent & Durable Design
+                        </div>
+                    </div>
+                    <img src="images/watch.jpg" alt="phone">
                 </div>
-                <div class="static-card">
-                    images
+                <div class="static-card" style="background-color: white;" >
+                    <div class="column">
+                        <div class="category">
+                            COMPUTERS
+                        </div>
+                        <div class="title">
+                            Build your own high powered PC
+                        </div>
+                    </div>
+                    <img src="images/pc.jpg" alt="phone">
                 </div>
             </div>
 
         </div>
     </div>
+    <div class="wrapper-why-us-section">
+        <div class="why-us-section">
+            <div class="container">
+                <div class="icon">
+                    <i id="truch" class="fa fa-solid fa-truck"></i>
+                </div>
+                <div class="column">
+                    <span class="title">Free Shipping</span>
+                    <span class="desc" >Free delivery over $100</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="icon">
+                    <i  class="fa fa-solid fa-share"></i>
+                </div>
+                <div class="column">
+                    <span class="title">Free Returns</span>
+                    <span class="desc">Hassle free returns</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="icon">
+                    <i class="fa fa-solid fa-shield "></i>
+                </div>
+                <div class="column">
+                    <span class="title">Secure Shopping</span>
+                    <span class="desc">Best security features</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="icon">
+                    <i class="fa fa-solid fa-cube"></i>
+                </div>
+                <div class="column">
+                    <span class="title">Unlimited Blocks</span>
+                    <span class="desc">Any content, any page</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buy-us">
+        <h3>
+            Why buy from us?
+        </h3>
+        <div class="separator"></div>
+        <div class="content">
+            Journal has been the best selling and most loved Opencart theme since first launch in 2013. Tried and tested by over 20K people, Journal is the best Opencart theme framework on the market today.
+            <a href="#" class="btn">Learn More</a>   
+        </div>
+
+    </div>
+
+    <div class="tabBar">
+        <div class="tab active">TOP CATEGORIES</div>
+        <div class="tab">ELECTRONICS</div>
+        <div class="tab">BEAUTY</div>
+        <div class="tab">FASHION</div>
+    </div>
+    <!-- <div class="category-wrapper">
+        <div class="categories-card">
+            <div class="card">
+                <img src="images/fashion.jpg" alt="Fashion">
+                <div class="label">FASHION</div>
+            </div>
+            <div class="card">
+                <img src="images/bags.jpg" alt="Bags">
+                <div class="label">BAGS</div>
+            </div>
+            <div class="card">
+                <img src="images/makeup.jpg" alt="Health & Beauty">
+                <div class="label">HEALTH & BEAUTY</div>
+            </div>
+            <div class="card">
+                <img src="images/shoe.jpg" alt="Footwear">
+                <div class="label">FOOTWEAR</div>
+            </div>
+            <div class="card">
+                <img src="images/sofa.jpg" alt="Home Decor">
+                <div class="label">HOME DECOR</div>
+            </div>
+        </div>
+    </div> -->
+
+    <section class="container">
+        <div class="slide-wrapper">
+            <div class="slider">
+                <img id="s1" src="images/shoe.jpg" alt="Footwear">
+                <img id="s2" src="images/shoe.jpg" alt="Footwear">
+                <img id="s3" src="images/shoe.jpg" alt="Footwear">
+                <img id="s4" src="images/shoe.jpg" alt="Footwear">
+                <img id="s5" src="images/shoe.jpg" alt="Footwear">
+            </div>
+            <div class="slider-nav">
+                <a id="#s1" href="#"></a>
+                <a id="#s2" href="#"></a>
+                <a id="#s3" href="#"></a>
+            </div>
+        </div>
+    </section>
+    
+    <div style="height: 500px;"></div>
 </body>
 </html>
