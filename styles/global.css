@@ -13,3 +13,10 @@ body {
 .spacer{
     padding: 20px;
 }
+
+.separator {
+    width: 53px;
+    height: 2px;
+    background-color: #e96630;
+    margin: 10px 0px;
+}
