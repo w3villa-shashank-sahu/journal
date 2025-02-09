@@ -1,71 +1,28 @@
+function initializeCarousel(className, slidesCount) {
+    $(className).slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: slidesCount,
+        slidesToScroll: slidesCount,
+        arrows: false,
+        responsive: Array.from({ length: slidesCount - 1 }, (_, index) => {
+            const remainingSlides = slidesCount - index - 1;
+            return {
+                breakpoint: 1400 - (index * 300),
+                settings: {
+                    slidesToShow: remainingSlides,
+                    slidesToScroll: remainingSlides,
+                    infinite: true,
+                    dots: true
+                }
+            };
+        })
+    });
+}
 
 $(document).ready(function () {
-    $('.carousel5').slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 1400,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-
-    $('.carousel4').slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 1400,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-
+    initializeCarousel('.carousel5', 5);
+    initializeCarousel('.carousel4', 4);
+    initializeCarousel('.carousel9', 9);
 });

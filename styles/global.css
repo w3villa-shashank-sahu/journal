@@ -2,15 +2,16 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: transparent;
+    box-sizing: border-box;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.spacer{
+.spacer {
     padding: 20px;
 }
 
