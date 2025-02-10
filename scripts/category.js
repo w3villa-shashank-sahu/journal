@@ -22,6 +22,7 @@ function initializeCarousel(className, slidesCount) {
 }
 
 $(document).ready(function () {
+    initializeCarousel('.carousel3', 3);
     initializeCarousel('.carousel5', 5);
     initializeCarousel('.carousel4', 4);
     initializeCarousel('.carousel9', 9);
