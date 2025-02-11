@@ -16,8 +16,8 @@
 
     .rolling-card {
         display: flex;
-        flex-grow: 1;
-        height: 420px;
+        flex: 2;
+        height: clamp(219px, 25vw ,420px);
         border-radius: 10px;
         background-color: #e1e7ec;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -29,7 +29,8 @@
 
             .tag {
                 color: white;
-                padding: 10px;
+                font-size: clamp(10px,1vw,15px);
+                padding: 3%;
                 border-radius: 3px;
                 width: fit-content;
                 background-color: blue;
@@ -37,14 +38,15 @@
 
             .title {
                 color: #323233;
-                font-size: 60px;
+                font-size: clamp(20px,3vw,50px);
                 font-weight: bolder;
             }
 
             button {
                 width: fit-content;
-
-                padding: 15px 20px;
+                font-size: clamp(10px,1vw,15px);
+                /* padding: 15px 20px; */
+                padding: 3% 4%;
             }
         }
 
@@ -53,36 +55,41 @@
             border-end-end-radius: 10px;
             border-top-right-radius: 10px;
             object-fit: contain;
-
         }
     }
 
     .column {
         display: flex;
+        flex: 1;
         flex-direction: column;
         gap: 20px;
         margin-right: 10px;
+        /* height: clamp(200px, 25vw ,420px); */
 
         .static-card {
-            height: 200px;
-            width: 400px;
+            /* height: 100%; */
+            height: clamp(100px, 11.87vw ,210px);;
+            /* width: 400px; */
             border-radius: 10px;
             background-color: #f3f2f3;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
             display: flex;
 
             .column {
-                margin-left: 20px;
+                margin-left: 5%;
                 justify-content: center;
+                gap: 10px;
 
                 .category {
                     color: blue;
+                    font-size: clamp(13px, 1.5vw, 20px);
                 }
 
                 .title {
                     font-weight: 600;
                     color: #323233;
-                    font-size: 20px;
+                    /* font-size: 20px; */
+                    font-size: clamp(13px, 1.5vw, 25px);
                 }
             }
 
@@ -100,5 +107,72 @@
 
         }
     }
+}
 
+
+@media screen and (max-width: 955px) {
+    .wrapper-cardSection > .row > .rolling-card > .column > .title {
+       font-size: clamp(20px,2.5vw,60px);
+   }
+}
+
+@media (width < 750px) {
+    .wrapper-cardSection > .row {
+        flex-direction: column;
+        .rolling-card{
+            flex: none;
+            width: 100%;
+            .column{
+                flex-direction: column;
+            }
+        }
+        img{
+            height: 100%;
+        }
+        .column{
+            flex-direction: row;
+            margin-right: 0px;
+            /* border: 2px solid red; */
+            .static-card{
+                flex: 1;
+                .column{
+                    flex-direction: column;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (width < 547px) {
+    .wrapper-cardSection > .row{
+        gap: 10px;
+        .rolling-card{
+            height: clamp(150px, 25vw ,420px);
+            img{
+                aspect-ratio: 1;
+                object-fit: cover;
+                object-position: 0px;
+            }
+            .column{
+                gap: 10px;
+                .title{
+                    font-size: clamp(15px,3vw,50px);
+                }
+                .tag, .button{
+                    font-size: clamp(7px, 1vw, 10px);
+                }
+            }
+        }
+        
+        .column > .static-card{
+            height: clamp(80px, 11vw, 210px);
+            .column {
+                gap: 5px;
+                .title, .category{
+                font-size: clamp(10px, 1.5vw, 25px);
+                }
+            }
+        }
+    }
 }

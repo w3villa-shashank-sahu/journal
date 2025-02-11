@@ -11,8 +11,7 @@
     .mid-wrapper {
         display: flex;
         background-color: #f7f6f6;
-        ;
-        height: 80px;
+        height: fit-content;
         align-items: center;
         justify-content: center;
     }
@@ -24,6 +23,10 @@
         height: 45px;
         justify-content: center;
     }
+}
+
+.mobile-appbar{
+    display: none;
 }
 
 .top-bar {
@@ -138,6 +141,7 @@
 
     .cart-info {
         display: flex;
+        justify-content: start;
 
         .text {
             display: flex;
@@ -231,4 +235,93 @@
         margin-right: 0px;
     }
 
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1075px) {
+    /* .mobile-appbar{
+        display: none;
+    } */
+    .top-bar{
+        .fa{margin: 0;}
+        a{margin-right: 10px;}
+        font-size: 12px;
+    }
+    .mid-bar{
+        padding: 10px 20px;
+        .logo{
+            margin-right: clamp(10px, 1vw, 50px);
+            font-size: clamp(10px, 3vw, 50px);;
+        }
+        .nav-icons {
+            padding: 0px 1vw;
+            .fa{
+                font-size: clamp(10px, 2vw, 25px);
+
+            }
+        }
+        .cart-info > .text{
+            white-space: nowrap;
+            font-size: 13px;
+            width: fit-content;
+        }
+        .search-bar{
+            height: 40px;
+            input{
+                width: 100px;
+                padding: 2px;
+                min-width: none;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 930px) {
+    /* .mobile-appbar{
+        display: none;
+    } */
+    .bottom-bar{
+        gap: 15px;
+        font-size: clamp(10px, 1.7vw, 20px);
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .appbar{
+        display: none;
+    }
+    .mobile-appbar{
+        display: contents;
+    }
+    .top-bar{
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 12px;
+        /* height: auto; */
+        background-color: #0044cc;
+        div > a, div > a > i{
+            color: white;
+        }
+    }
+    .bottom-bar{
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        .logo{
+            font-size: clamp(30px, 7vw, 50px);
+            font-weight: bolder;
+        }
+        .action{
+            display: flex;
+            gap: 20px;
+            font-size: clamp(10px, 7vw,30px);
+        }
+
+    }
+    
 }

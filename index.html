@@ -25,6 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="scripts/category.js"></script>
 
+    <!-- Appbars -->
     <header class="appbar">
         <div class="top-wrapper">
             <div class="top-bar">
@@ -145,6 +146,42 @@
             </div>
         </div>
     </header>
+    <header class="mobile-appbar">
+        <div class="top-bar">
+            <div>
+                <a href="">
+                    <i class="fa-solid fa-circle-user"></i>
+                Login
+                </a>
+                <a href="">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    Register
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    $ US Dollar <i class="fa fa-caret-down"></i>
+                </a>
+                <a href="#">
+                    <img id="lang-flag"
+                        src="https://t3.ftcdn.net/jpg/00/42/09/52/360_F_42095282_0EUlCqFhJN2xIDjIRDKXHt9nLBeazq8q.jpg"
+                        alt="British English">
+                    English
+                    <i class="fa fa-caret-down"></i>
+                </a>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="logo">JOURNAL</div>
+            <div class="action">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa fa-magnifying-glass"></i>
+                <i class="fa fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cards -->
     <div class="wrapper-cardSection">
         <div class="row">
             <div class="rolling-card">
@@ -185,6 +222,7 @@
 
         </div>
     </div>
+    <!-- Ribbon -->
     <div class="wrapper" style="background-color: #3b4854 ;">
         <div class="why-us-section">
             <div class="container">
@@ -201,8 +239,8 @@
                     <i class="fa fa-solid fa-share"></i>
                 </div>
                 <div class="column">
-                    <span class="title">Free Returns</span>
-                    <span class="desc">Hassle free returns</span>
+                    <div class="title">Free Returns</div>
+                    <div class="desc">Hassle free returns</div>
                 </div>
             </div>
             <div class="container">
@@ -225,6 +263,7 @@
             </div>
         </div>
     </div>
+    <!-- Buy Us Section -->
     <div class="buy-us">
         <h3>
             Why buy from us?
@@ -237,7 +276,6 @@
         </div>
 
     </div>
-
     <div class="tabBar">
         <div class="tab active">TOP CATEGORIES</div>
         <div class="tab">ELECTRONICS</div>
@@ -278,7 +316,6 @@
     </section>
     <div class="spacer"></div>
 
-
     <!-- Featured products -->
     <div class="wrapper" style="background-color: #f9f8f9">
         <div class="buy-us">
@@ -302,7 +339,6 @@
             <div class="tab">SPECIAL</div>
         </div>
     </div>
-
     <section class="wrapper" style="background-color: #f9f8f9">
         <div class="carousel carousel4">
             <div class="carousel-FeaturedItem">
@@ -337,6 +373,9 @@
                                 </div>
                             </div>
                             <button class="add-to-cart">ADD TO CART</button>
+                            <button class="cartIcon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                         <div class="wishlist-compare">
                             <button><i class="fa-regular fa-heart"></i></button>
@@ -380,6 +419,9 @@
                                 </div>
                             </div>
                             <button class="add-to-cart">ADD TO CART</button>
+                            <button class="cartIcon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                         <div class="wishlist-compare">
                             <button><i class="fa-regular fa-heart"></i></button>
@@ -424,6 +466,9 @@
                                 </div>
                             </div>
                             <button class="add-to-cart">ADD TO CART</button>
+                            <button class="cartIcon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                         <div class="wishlist-compare">
                             <button><i class="fa-regular fa-heart"></i></button>
@@ -467,6 +512,9 @@
                                 </div>
                             </div>
                             <button class="add-to-cart">ADD TO CART</button>
+                            <button class="cartIcon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                         <div class="wishlist-compare">
                             <button><i class="fa-regular fa-heart"></i></button>
@@ -511,6 +559,9 @@
                                 </div>
                             </div>
                             <button class="add-to-cart">ADD TO CART</button>
+                            <button class="cartIcon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                         <div class="wishlist-compare">
                             <button><i class="fa-regular fa-heart"></i></button>
@@ -554,6 +605,9 @@
                                 </div>
                             </div>
                             <button class="add-to-cart">ADD TO CART</button>
+                            <button class="cartIcon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                         <div class="wishlist-compare">
                             <button><i class="fa-regular fa-heart"></i></button>
@@ -1003,7 +1057,7 @@
                 <div class="card">
                     <img src="https://imgs.search.brave.com/C87qKWw9eG3cIdWQ83Mt0yzvJBVP0d6MAEU1bdtSrbo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9oZWFkcGhvbmUt/d2hpdGUtYmFja2dy/b3VuZF84Njg3ODMt/MjA0MzEuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZA" alt="">
                     <div class="column">
-                        Oversized Sunglasses for India
+                        Oversized Sunglasses
                         <span>$397.00</span>
                         <div>
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -1015,7 +1069,7 @@
                 <div class="card">
                     <img src="https://imgs.search.brave.com/C87qKWw9eG3cIdWQ83Mt0yzvJBVP0d6MAEU1bdtSrbo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9oZWFkcGhvbmUt/d2hpdGUtYmFja2dy/b3VuZF84Njg3ODMt/MjA0MzEuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZA" alt="">
                     <div class="column">
-                        Oversized Sunglasses for India
+                        Oversized Sunglasses
                         <span>$397.00</span>
                         <div>
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -1027,7 +1081,7 @@
                 <div class="card">
                     <img src="https://imgs.search.brave.com/C87qKWw9eG3cIdWQ83Mt0yzvJBVP0d6MAEU1bdtSrbo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9oZWFkcGhvbmUt/d2hpdGUtYmFja2dy/b3VuZF84Njg3ODMt/MjA0MzEuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZA" alt="">
                     <div class="column">
-                        Oversized Sunglasses for India
+                        Oversized Sunglasses
                         <span>$397.00</span>
                         <div>
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -1096,7 +1150,7 @@
                 </ul>
             </div>
     
-            <div class="footer-column">
+            <div class="footer-column account">
                 <h3>My Account</h3>
                 <div class="separator"></div>
                 <ul>
@@ -1128,7 +1182,7 @@
      <!-- Copyright footer -->
      <div class="wrapper" style="background-color: #3a4855;">
         <div class="copyright">
-            <div>copyright @ 2014, Your Store, All Rights Reserved</div>
+            <div class="detail">copyright @ 2014, Your Store, All Rights Reserved</div>
             <div class="payment">
                 <span><i class="fa-brands fa-cc-paypal"></i></span>
                 <span><i class="fa-brands fa-cc-stripe"></i></span>
