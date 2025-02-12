@@ -23,7 +23,7 @@ $(document).ready(function () {
         { width: 1400, slidesToShow: 4 },
         { width: 1200, slidesToShow: 3 },
         { width: 992, slidesToShow: 2 },
-        { width: 500, slidesToShow: 1 }
+        { width: 440, slidesToShow: 1 }
     ];
 
     const breakpoints5 = [
